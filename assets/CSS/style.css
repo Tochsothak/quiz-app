@@ -22,10 +22,15 @@ body {
 }
 .quiz-options {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
 
 .quiz-options label {
   display: block;
+  align-items: center;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -49,4 +54,10 @@ button:active {
   margin-top: 20px;
   font-size: 18px;
   font-weight: bold;
+}
+.progress-bar {
+  height: 20px;
+  width: 0px;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
 }
