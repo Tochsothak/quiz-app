@@ -19,6 +19,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 400px;
   text-align: center;
+  transition: 0.5s ease;
 }
 .quiz-options {
   margin-top: 20px;
@@ -27,7 +28,6 @@ body {
   justify-content: start;
   align-items: start;
 }
-
 .quiz-options label {
   display: block;
   align-items: center;
@@ -56,8 +56,15 @@ button:active {
   font-weight: bold;
 }
 .progress-bar {
-  height: 20px;
-  width: 0px;
+  height: 4px;
+  width: 0%;
   background-color: #4caf50;
   transition: width 0.3s ease;
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .quiz-container {
+    width: 100%;
+    padding: 10px;
+  }
 }
